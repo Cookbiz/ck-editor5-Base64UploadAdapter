@@ -36,6 +36,7 @@ import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
 import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
 import Font from '@ckeditor/ckeditor5-font/src/font';
 import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -70,7 +71,8 @@ ClassicEditor.builtinPlugins = [
 	Underline,
 	Strikethrough,
 	Font,
-	Highlight
+	Highlight,
+	Alignment
 ];
 
 // Editor configuration.
@@ -95,6 +97,7 @@ ClassicEditor.defaultConfig = {
 			'highlight',
 			'indent',
 			'outdent',
+			'alignment',
 			'|',
 			'imageUpload',
 			'blockQuote',
