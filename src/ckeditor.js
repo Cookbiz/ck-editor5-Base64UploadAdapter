@@ -33,6 +33,7 @@ import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64u
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
 import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
 import Font from '@ckeditor/ckeditor5-font/src/font';
+import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -64,7 +65,8 @@ ClassicEditor.builtinPlugins = [
 	TextTransformation,
 	Underline,
 	Strikethrough,
-	Font
+	Font,
+	Highlight
 ];
 
 // Editor configuration.
@@ -86,6 +88,7 @@ ClassicEditor.defaultConfig = {
 			'bulletedList',
 			'numberedList',
 			'|',
+			'highlight',
 			'indent',
 			'outdent',
 			'|',
