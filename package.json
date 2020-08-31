@@ -1,6 +1,6 @@
 {
   "name": "@Cookbiz/ck-editor5-base64uploadadapter",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor.",
   "keywords": [
     "ckeditor5-build",
@@ -42,6 +42,7 @@
     "@ckeditor/ckeditor5-highlight": "^11.0.5",
     "@ckeditor/ckeditor5-image": "^14.0.0",
     "@ckeditor/ckeditor5-indent": "^10.1.0",
+    "@ckeditor/ckeditor5-link": "^22.0.0",
     "@ckeditor/ckeditor5-list": "^12.1.0",
     "@ckeditor/ckeditor5-paragraph": "^11.0.5",
     "@ckeditor/ckeditor5-paste-from-office": "^11.1.0",
@@ -89,5 +90,6 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  }
+  },
+  "dependencies": {}
 }

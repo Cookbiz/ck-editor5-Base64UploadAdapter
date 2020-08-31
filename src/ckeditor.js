@@ -26,6 +26,7 @@ import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
 import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
 import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
 import List from '@ckeditor/ckeditor5-list/src/list';
+import Link from '@ckeditor/ckeditor5-link/src/link';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import Table from '@ckeditor/ckeditor5-table/src/table';
@@ -61,6 +62,7 @@ ClassicEditor.builtinPlugins = [
 	ImageUpload,
 	ImageResize,
 	List,
+	Link,
 	Paragraph,
 	PasteFromOffice,
 	Table,
@@ -98,6 +100,7 @@ ClassicEditor.defaultConfig = {
 			'alignment',
 			'bulletedList',
 			'numberedList',
+			'link',
 			'imageUpload',
 			'insertTable',
 			'undo',
