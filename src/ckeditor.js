@@ -1,5 +1,5 @@
 /**
- * @license Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+ * @license Copyright (c) 2003-2020, CKSource - Frederico Knabben. All rights reserved.
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
  */
 
@@ -7,6 +7,7 @@
 import ClassicEditorBase from '@ckeditor/ckeditor5-editor-classic/src/classiceditor';
 
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
+import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter';
@@ -39,11 +40,12 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
 
-export default class ClassicEditor extends ClassicEditorBase { }
+export default class ClassicEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
 ClassicEditor.builtinPlugins = [
 	Essentials,
+	UploadAdapter,
 	Autoformat,
 	Bold,
 	Italic,
@@ -63,16 +65,16 @@ ClassicEditor.builtinPlugins = [
 	ImageResize,
 	Link,
 	List,
-	MediaEmbed,
 	Paragraph,
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	TextTransformation,
 	Base64UploadAdapter,
+	MediaEmbed,
 	Highlight,
 	Indent,
 	IndentBlock,
+	TextTransformation,
 	Font,
 	Alignment
 ];
@@ -99,23 +101,18 @@ ClassicEditor.defaultConfig = {
 			'highlight',
 			'outdent',
 			'indent',
+			'outdent',
 			'alignment',
 			'bulletedList',
 			'numberedList',
+			'|',
 			'link',
-			'mediaEmbed',
 			'imageUpload',
+			'blockQuote',
 			'insertTable',
+			'mediaEmbed',
 			'undo',
 			'redo'
-		]
-	},
-	heading: {
-		options: [
-			{ modelElement: 'paragraph', title: 'パラグラフ', class: 'ck-heading_paragraph' },
-			{ modelElement: 'heading1', viewElement: 'h1', title: 'Heading 1', class: 'ck-heading_heading1' },
-			{ modelElement: 'heading2', viewElement: 'h2', title: 'Heading 2', class: 'ck-heading_heading2' },
-			{ modelElement: 'heading', viewElement: 'h3', title: 'Heading 3', class: 'ck-heading_heading3' }
 		]
 	},
 	image: {
