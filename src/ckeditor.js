@@ -27,9 +27,9 @@ import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
 import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
 import Indent from '@ckeditor/ckeditor5-indent/src/indent';
 import IndentBlock from '@ckeditor/ckeditor5-indent/src/indentblock';
-import Link from '@ckeditor/ckeditor5-link/src/link';
+// import Link from '@ckeditor/ckeditor5-link/src/link';
 import List from '@ckeditor/ckeditor5-list/src/list';
-import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed';
+// import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
@@ -63,14 +63,14 @@ ClassicEditor.builtinPlugins = [
 	ImageToolbar,
 	ImageUpload,
 	ImageResize,
-	Link,
+	// Link,
 	List,
 	Paragraph,
 	PasteFromOffice,
 	Table,
 	TableToolbar,
 	Base64UploadAdapter,
-	MediaEmbed,
+	// MediaEmbed,
 	Highlight,
 	Indent,
 	IndentBlock,
@@ -106,11 +106,11 @@ ClassicEditor.defaultConfig = {
 			'bulletedList',
 			'numberedList',
 			'|',
-			'link',
+			// 'link',
 			'imageUpload',
 			'blockQuote',
 			'insertTable',
-			'mediaEmbed',
+			// 'mediaEmbed',
 			'undo',
 			'redo'
 		]
