@@ -25,8 +25,9 @@ import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
 import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
 import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
 import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
+import Link from '@ckeditor/ckeditor5-link/src/link';
 import List from '@ckeditor/ckeditor5-list/src/list';
-// import Link from '@ckeditor/ckeditor5-link/src/link';
+import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import Table from '@ckeditor/ckeditor5-table/src/table';
@@ -61,8 +62,9 @@ ClassicEditor.builtinPlugins = [
 	ImageToolbar,
 	ImageUpload,
 	ImageResize,
+	Link,
 	List,
-	// Link,
+	MediaEmbed,
 	Paragraph,
 	PasteFromOffice,
 	Table,
@@ -101,10 +103,19 @@ ClassicEditor.defaultConfig = {
 			'bulletedList',
 			'numberedList',
 			'link',
+			'mediaEmbed',
 			'imageUpload',
 			'insertTable',
 			'undo',
 			'redo'
+		]
+	},
+	heading: {
+		options: [
+			{ modelElement: 'paragraph', title: 'パラグラフ', class: 'ck-heading_paragraph' },
+			{ modelElement: 'heading1', viewElement: 'h1', title: 'Heading 1', class: 'ck-heading_heading1' },
+			{ modelElement: 'heading2', viewElement: 'h2', title: 'Heading 2', class: 'ck-heading_heading2' },
+			{ modelElement: 'heading', viewElement: 'h3', title: 'Heading 3', class: 'ck-heading_heading3' }
 		]
 	},
 	image: {
