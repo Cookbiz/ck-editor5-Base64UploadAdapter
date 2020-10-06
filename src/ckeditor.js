@@ -113,25 +113,6 @@ ClassicEditor.defaultConfig = {
 			'alignLeft', 'alignCenter', 'alignRight'
 		],
 
-		// Configure the available image resize options.
-		// resizeOptions: [
-		// 	{
-		// 		name: 'imageResize:original',
-		// 		label: 'Original',
-		// 		value: null
-		// 	},
-		// 	{
-		// 		name: 'imageResize:50',
-		// 		label: '50%',
-		// 		value: '50'
-		// 	},
-		// 	{
-		// 		name: 'imageResize:75',
-		// 		label: '75%',
-		// 		value: '75'
-		// 	}
-		// ],
-
 		// You need to configure the image toolbar, too, so it shows the new style
 		// buttons as well as the resize buttons.
 		toolbar: [
@@ -154,5 +135,6 @@ ClassicEditor.defaultConfig = {
 		removeProviders: [ 'twitter', 'instagram', 'facebook', 'googleMaps', 'flickr' ]
 	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
-	language: 'ja'
+	language: 'ja',
+	height: 570
 };
